@@ -6,12 +6,13 @@
     <title>Demo2</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <body>
     <div id="header">
         <div class="header-heading">
             <div class="nav-menu">
-                <ul class="nav type-link">
+                <ul class="nav hide-on-mobile type-link">
                     <li><a href="">Home</a></li>
                     <li><a href="">Product</a></li>
                     <li><a href="">Pricing</a></li>
@@ -20,10 +21,14 @@
                 </ul>
                 <img src="./assets/img/center.png" alt="Center">
             </div>
-            <div class="nav-icon">
+            <div class="nav-icon hide-on-mobile">
                 <img src="./assets/img/social media.png" alt="">
             </div>
+            <div class="nav-icon hide-on-pc">
+                <img src="./assets/img/bx_bx-menu-alt-rightmenu.png" alt="">
+            </div>
         </div>
+
         <div class="header-desc">
             <h1 class="type-h1">The best products start with Figma</h1>
             <h4 class="type-h4">Most calendars are designed for teams. Slate is designed for freelancers</h4>
@@ -35,8 +40,9 @@
     <div id="main">
         <div class="feature">
             <h2 class="type-h2">Features</h2>
-            <h4 class="type-h4">Most calendars are designed for teams.</h4>
-            <br>Slate is designed for freelancers</p>
+            <h4 class="type-h4">Most calendars are designed for teams.
+            <br>Slate is designed for freelancers</h4>
+            <img class="screen-mb hide-on-pc" src="./assets/img/screen.png" alt="">
             <div class="row">
                 <div class="f-row">
                     <img src="./assets/img/mdi_draw.png" alt="">
@@ -54,7 +60,7 @@
                     <p class="type-para">Slate helps you see how many more days you need to work to reach your financial goal.</p>
                 </div>
             </div>
-            <img class="f-img" src="./assets/img/features.png" alt="">
+            <img class="f-img hide-on-mobile" src="./assets/img/features.png" alt="">
         </div>
         <div class="hero">
             <div class="hero-desc">
@@ -69,13 +75,17 @@
             </div>
         </div>
         <div class="cta">
-            <div class="cta-img">
+            <div class="cta-img hide-on-mobile">
                 <img src="./assets/img/subcribe.png" alt="">
             </div>
             <div class="cta-desc">
                 <div class="cta-desc__text">
                     <h3 class="type-h3">At your fingertips</h3>
-                    <h2 class="type-h2">Lightning fast <br> prototyping </h2>
+                    <h2 class="hide-on-mobile type-h2">Lightning fast <br> prototyping </h2>
+                    <h2 class="hide-on-pc type-h2">Newsletter </h2>
+                </div>
+                <div class="cta-img hide-on-pc">
+                    <img style="width: 160%;" src="./assets/img/subcribe.png" alt="">
                 </div>
                 <div class="cta-desc__email">
                     <h3 class="type-h3">Subscribe to our Newsletter</h3>
@@ -86,6 +96,7 @@
                     </div> 
                 </div>
             </div>
+            
         </div>
         <div class="partner">
             <h2 class="type-h2">Partners</h2>
@@ -100,19 +111,19 @@
                 <div class=" col-2 logo-gg">
                     <img src="./assets/img/microsoft.png" alt="Microsoft">
                 </div>
-                <div class=" col-3 logo-gg">
+                <div class=" col-3 logo-gg hide-on-mobile">
                     <img src="./assets/img/uber.png" alt="Uber">
                 </div>
-                <div class=" col-2 logo-gg">
+                <div class=" col-2 logo-gg hide-on-mobile">
                     <img src="./assets/img/dropbox.png" alt="Google">
                 </div>
-                <div class=" col-1 logo-gg">
+                <div class=" col-1 logo-gg hide-on-mobile">
                     <img src="./assets/img/google.png" alt="Google">
                 </div>
-                <div class=" col-3 logo-gg">
+                <div class=" col-3 logo-gg hide-on-mobile">
                     <img src="./assets/img/uber.png" alt="Uber">
                 </div>
-                <div class=" col-1 logo-gg">
+                <div class=" col-1 logo-gg hide-on-mobile">
                     <img src="./assets/img/amazon.png" alt="Amazon">
                 </div>    
             </div>
@@ -214,7 +225,7 @@
             <h4 class="type-h4">Most calendars are designed for teams. <br>
             Slate is designed for freelancers</h4>
             <div class="contact-desc">
-                <div class="contact-info">
+                <div id="c-info" class="contact-info">
                     <h3 class="type-h3">Contact Us</h3>
                     <div class="contact-input">
                         <input class="info-name" type="text" placeholder="Your Name">
@@ -227,14 +238,14 @@
                         </button>
                     </div>
                 </div>
-                <div class="contact-map">
-                    <div class="info-map">
+                <div id="c-map" class="contact-map">
+                    <div  class="info-map">
                         <img src="./assets/img/block.png" alt="" class="contact-address">
                         <img src="./assets/img/phone.png" alt="" class="contact-phone">
                         <img src="./assets/img/email.png" alt="" class="contact-email">
                     </div>
                     <div class="img-map">
-                        <img src="./assets/img/map.png" alt="Map">
+                        <img class="hide-on-mobile" src="./assets/img/map.png" alt="Map">
                     </div>
                     <div class="icon-socials">
                         <img src="./assets/img/social.png" alt="">
@@ -272,7 +283,7 @@
         <div class="footer-info">
             <img style="display: block;padding: 0 0 10px 0;" src="./assets/img/blockaddress.png" alt="">
             <img style="display: block;padding: 10px 0 10px 0;" src="./assets/img/blockphone.png" alt="">
-            <img style="display: block;padding: 10px 0 10px 0;" src="./assets/img/social mediaicon.png" alt="">
+            <img class="footer-socials" style="display: block;padding: 10px 0 10px 0;" src="./assets/img/social mediaicon.png" alt="">
         </div>
     </div> 
 </body>

@@ -91,7 +91,7 @@ html{
     letter-spacing: 0.2px;
 }
 #header {
-    background: url(/Code/demo2/assets/img/header.png) top no-repeat;
+    background: url(/Code/demo2/assets/img/header.png) top center/cover no-repeat;
     max-width: 1775.77px;
     height: 1042px;
     margin: 0 auto;
@@ -174,7 +174,6 @@ html{
 }
 
 .feature .row {
-    width: 869px;
     display: flex;
     justify-content: space-between;
     margin: 80px auto 0 auto;
@@ -387,6 +386,13 @@ html{
     justify-content: center;
     margin: 240px 0 120px 0;
 }
+#c-info{
+    order: 1;
+}
+#c-map{
+    order: 2;
+}
+
 .contact-desc {
     display: flex;
     justify-content: space-around;
@@ -430,6 +436,7 @@ html{
     border: 1px solid #E8E8E8;
     margin-bottom: 40px;
     background-color: #F5F5F5;
+    width: 100%;
 
 }
 .info-email{
